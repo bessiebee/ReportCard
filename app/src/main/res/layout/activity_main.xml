@@ -6,36 +6,14 @@
     tools:context="com.example.bessie.reportcard.MainActivity">
 
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:hint="Username"
-        android:id="@+id/etName"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/loginbtn"
-        android:layout_below="@+id/etPassword"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etPassword"
-        android:layout_below="@+id/etName"
-        android:layout_alignLeft="@+id/etName"
-        android:layout_alignStart="@+id/etName"
-        android:layout_marginTop="43dp"
-        android:hint="Password" />
+        android:layout_above="@+id/tvRegisterHere"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,5 +25,27 @@
         android:layout_alignLeft="@+id/loginbtn"
         android:layout_alignStart="@+id/loginbtn"
         android:layout_marginBottom="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_above="@+id/loginbtn"
+        android:layout_marginBottom="23dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
 </RelativeLayout>
