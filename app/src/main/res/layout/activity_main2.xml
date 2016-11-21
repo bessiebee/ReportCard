@@ -3,12 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bessie.reportcard.Main2Activity">
+    tools:context="com.example.bessie.reportcard.Main2Activity"
+    >
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Name"
         android:layout_marginTop="19dp"
@@ -33,6 +36,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Surname"
         android:id="@+id/textView5"
+
+        android:textStyle="bold"
         android:layout_alignBottom="@+id/editText_surname"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -54,6 +59,8 @@
         android:text="Marks"
         android:id="@+id/textView6"
         android:layout_marginTop="19dp"
+
+        android:textStyle="bold"
         android:layout_below="@+id/textView5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -69,32 +76,35 @@
         android:layout_toEndOf="@+id/textView5" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Add Data"
         android:id="@+id/button2_Add"
+        android:background="@drawable/button_rounded"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4"
-        />
+        android:layout_toEndOf="@+id/textView4" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="View All"
         android:id="@+id/viewBtn"
+        android:background="@drawable/blue_buttons"
         android:layout_marginRight="66dp"
         android:layout_marginEnd="66dp"
         android:layout_above="@+id/updatebtn"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Update"
+        android:background="@drawable/orange_button"
         android:id="@+id/updatebtn"
         android:layout_below="@+id/button2_Add"
         android:layout_alignLeft="@+id/button2_Add"
@@ -110,24 +120,27 @@
         android:layout_below="@+id/textView6"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/editText_marks"
-        android:layout_alignStart="@+id/editText_marks" />
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="ID"
+        android:text="Student Number"
         android:id="@+id/textView7"
+
+        android:textStyle="bold"
         android:layout_alignBottom="@+id/editText_id"
-        android:layout_toLeftOf="@+id/button2_Add"
-        android:layout_toStartOf="@+id/button2_Add" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Delete"
         android:id="@+id/btndelete"
+        android:background="@drawable/red_button"
         android:layout_alignTop="@+id/updatebtn"
         android:layout_alignRight="@+id/viewBtn"
         android:layout_alignEnd="@+id/viewBtn" />
